@@ -8,7 +8,11 @@ class Settings(BaseSettings):
     APP_NAME: str = "ChatNemo"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000", "https://chatnemo.vercel.app"]
+    ALLOWED_ORIGINS: List[str] = [
+    "http://localhost:3000",
+    "https://chatnemo.vercel.app",
+    "https://chatnemo-jzsyxg3g1-chatnemo.vercel.app",
+]
 
     # Security
     SECRET_KEY: str
