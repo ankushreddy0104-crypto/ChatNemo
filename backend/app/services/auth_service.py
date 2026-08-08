@@ -1,14 +1,14 @@
 from datetime import datetime, timedelta, timezone
 from typing import Optional
 from jose import JWTError, jwt
-from passlib.context import CryptContext
+from pwdlib import PasswordHash
 from supabase import create_client, Client
 from app.config import get_settings
 from app.schemas.auth import UserRegister, UserLogin, TokenResponse, UserResponse
 from fastapi import HTTPException, status
 
 settings = get_settings()
-pwd_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_hash = PasswordHash.recommended()
 
 
 def _supabase() -> Client:
@@ -16,11 +16,11 @@ def _supabase() -> Client:
 
 
 def hash_password(password: str) -> str:
-    return pwd_ctx.hash(password)
+    return pwd_hash.hash(password)
 
 
 def verify_password(plain: str, hashed: str) -> bool:
-    return pwd_ctx.verify(plain, hashed)
+    return pwd_hash.verify(plain, hashed)
 
 
 def create_access_token(user_id: str) -> str:
