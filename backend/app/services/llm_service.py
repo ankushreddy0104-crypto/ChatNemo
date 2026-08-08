@@ -19,7 +19,7 @@ PROVIDER_MAP = {
     "nvidia/nemotron-3-ultra-550b-a55b":          "nvidia",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": "nvidia",
     "meta/llama-3.3-70b-instruct":            "nvidia",
-    "qwen/qwen2.5-coder-32b-instruct":        "nvidia",
+    "deepseek-ai/deepseek-v4-flash":             "nvidia",
     # Future providers — just add client + map entry:
     # "gpt-4o":          "openai",
     # "claude-3-5-sonnet": "anthropic",
@@ -30,7 +30,7 @@ MODEL_LABELS = {
     "nvidia/nemotron-3-ultra-550b-a55b":                  "Nemotron 3 Ultra 550B",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning":  "Nemotron Nano 30B",
     "meta/llama-3.3-70b-instruct":                    "Llama 3.3 70B",
-    "qwen/qwen2.5-coder-32b-instruct":                "Qwen Coder 32B",
+    "deepseek-ai/deepseek-v4-flash":             "DeepSeek V4 Flash",
 }
 
 
