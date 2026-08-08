@@ -89,7 +89,7 @@ export const useAppStore = create<AppStore>()(
       // Models
       models: [],
       setModels: (models) => set({ models }),
-      selectedModel: "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      selectedModel: "nvidia/nemotron-3-ultra-550b-a55b",
       setSelectedModel: (selectedModel) => set({ selectedModel }),
 
       // Settings

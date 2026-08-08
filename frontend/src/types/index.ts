@@ -60,5 +60,5 @@ export const DEFAULT_SETTINGS: ChatSettings = {
   max_tokens: 2048,
   top_p: 0.95,
   system_prompt: "",
-  default_model: "nvidia/nemotron-ultra-253b-v1",
+  default_model: "nvidia/nemotron-3-ultra-550b-a55b",
 };
