@@ -16,7 +16,7 @@ settings = get_settings()
 # ── Provider registry ──────────────────────────────────────────────────────────
 PROVIDER_MAP = {
     # NVIDIA NIM models
-    "nvidia/llama-3.1-nemotron-ultra-253b-v1":          "nvidia",
+    "nvidia/nemotron-3-ultra-550b-a55b":          "nvidia",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": "nvidia",
     "meta/llama-3.3-70b-instruct":            "nvidia",
     "qwen/qwen2.5-coder-32b-instruct":        "nvidia",
@@ -27,7 +27,7 @@ PROVIDER_MAP = {
 }
 
 MODEL_LABELS = {
-    "nvidia/llama-3.1-nemotron-ultra-253b-v1":                  "Nemotron Ultra 253B",
+    "nvidia/nemotron-3-ultra-550b-a55b":                  "Nemotron 3 Ultra 550B",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning":  "Nemotron Nano 30B",
     "meta/llama-3.3-70b-instruct":                    "Llama 3.3 70B",
     "qwen/qwen2.5-coder-32b-instruct":                "Qwen Coder 32B",

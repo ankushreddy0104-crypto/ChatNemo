@@ -17,7 +17,7 @@ class MessageSchema(BaseModel):
 class ChatRequest(BaseModel):
     conversation_id: Optional[str] = None
     message: str = Field(..., min_length=1, max_length=32000)
-    model: str = Field(default="nvidia/llama-3.1-nemotron-ultra-253b-v1")
+    model: str = Field(default="nvidia/nemotron-3-ultra-550b-a55b")
     temperature: float = Field(default=0.7, ge=0.0, le=2.0)
     max_tokens: int = Field(default=2048, ge=1, le=8192)
     top_p: float = Field(default=0.95, ge=0.0, le=1.0)
@@ -32,7 +32,7 @@ class ChatRequest(BaseModel):
 
 class ConversationCreate(BaseModel):
     title: str = Field(default="New Chat", max_length=200)
-    model: str = Field(default="nvidia/llama-3.1-nemotron-ultra-253b-v1")
+    model: str = Field(default="nvidia/nemotron-3-ultra-550b-a55b")
 
 
 class ConversationUpdate(BaseModel):
